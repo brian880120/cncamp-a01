@@ -7,6 +7,11 @@
 3. Server 端记录访问日志包括客户端 IP，HTTP 返回码，输出到 server 端的标准输出
 4. 当访问 localhost/healthz 时，应返回 200
 
+运行:
+
+make dep: 下载依赖包
+
+make run: 运行程序
 
 API测试:
 
@@ -36,6 +41,7 @@ endpoint测试
 	}
 
 2. localhost:8090/badRequest GET
+
 	response body:
 
 	{
