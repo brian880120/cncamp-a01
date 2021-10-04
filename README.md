@@ -37,27 +37,38 @@ endpoint测试
 
 2. localhost:8090/badRequest GET
 	response body:
+
 	{
 		"message": "Bad Request"
 	}
-	 server端日志应包含: Request Status: Bad Request
+
+	server端日志应包含: Request Status: Bad Request
 
 3. localhost:8090/notFound GET
+
 	response body:
+
 	404 page not found
 
-	 server端日志应包含: Request Status: Not Found
+	server端日志应包含: Request Status: Not Found
 
 4. localhost:8090/mockSignup POST
+
 	request header: "Content-Type": "application/json"
+
 	request body:
+
 	{
 		"name": "test",
 		"email": "test@mail.com"
 	}
+
 	结果:
+
 	response body:
+
 	{
 		"name": "test",
-    	"email": "test@mail.com"
+    		"email": "test@mail.com"
 	}
+
