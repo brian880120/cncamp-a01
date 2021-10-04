@@ -59,12 +59,12 @@ func Log(next http.Handler) http.Handler {
         if err != nil {
             log.Println(err)
         }
+
 		lrw := NewLogginResponseWriter(w)
 
-        log.Println(ip)
         next.ServeHTTP(lrw, r)
 
 		statusCode := lrw.statusCode
-		log.Println(http.StatusText(statusCode))
+		log.Printf("IP: %s, Request Method: %s, Request Status: %s", ip, r.Method, http.StatusText(statusCode))
     })
 }

@@ -12,6 +12,8 @@ func main() {
     r := mux.NewRouter()
 	r.HandleFunc("/healthz", handler.Healthz)
 	r.HandleFunc("/notFound", handler.NotFound)
+	r.HandleFunc("/badRequest", handler.BadRequest)
+	r.HandleFunc("/mockSignup", handler.Signup).Methods("POST")
 	r.Use(middleware.CORS)
 	r.Use(middleware.ResponseHeader)
 	r.Use(middleware.Log)
