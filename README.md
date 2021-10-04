@@ -26,8 +26,11 @@ endpoints:
 endpoint测试
 
 1. localhost:8090/healthz GET
+
 	结果:
+
 	response body:
+
 	{
 		"message": "Status OK"
 	}
