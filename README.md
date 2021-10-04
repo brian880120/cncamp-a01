@@ -42,7 +42,7 @@ endpoint测试
 		"message": "Bad Request"
 	}
 
-	server端日志应包含: Request Status: Bad Request
+	server端日志应包含: Request Status: Bad Request
 
 3. localhost:8090/notFound GET
 
@@ -50,7 +50,7 @@ endpoint测试
 
 	404 page not found
 
-	server端日志应包含: Request Status: Not Found
+	server端日志应包含: Request Status: Not Found
 
 4. localhost:8090/mockSignup POST
 
